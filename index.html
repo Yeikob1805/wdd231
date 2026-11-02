@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal course home page for BYU-Idaho WDD231, Web Frontend Development.">
+    <meta name="author" content="Yeikob Valverde">
+
+    <title>Yeikob Valverde | WDD231 Course Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <img src="images/logo.webp" alt="" width="50" height="50">
+                <span>DevWise</span>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav id="primary-navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="chamber/index.html">Chamber Project</a>
+        <a href="final/index.html">Final Project</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="home-grid">
+            <section class="about-section">
+                <h2>About Me</h2>
+                <div class="section-content">
+                    <p>Hello! My name is Yeikob Valverde. I am a Software Development student at BYU-Pathway Worldwide. I am interested in programming, web development, and technology.</p>
+                    <p>I enjoy learning new programming languages, developing personal projects, and exploring different ways to solve problems through technology.</p>
+                </div>
+            </section>
+
+            <section class="photo-section">
+                <h2>Student Photo</h2>
+                <div class="section-content">
+                    <img src="images/profile.jpg" alt="Portrait of Yeikob Valverde" width="300" height="300">
+                </div>
+            </section>
+        </div>
+
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button type="button" id="all-courses" class="filter-button active">All</button>
+                <button type="button" id="cse-courses" class="filter-button">CSE</button>
+                <button type="button" id="wdd-courses" class="filter-button">WDD</button>
+            </div>
+
+            <div id="course-container" class="course-grid"></div>
+
+            <p id="credit-total">The total credits for courses listed above is 0.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
+        </div>
+
+        <p class="copyright">&copy; <span id="currentyear"></span> Yeikob Valverde | Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
