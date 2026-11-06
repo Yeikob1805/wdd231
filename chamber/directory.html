@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Lima Business Alliance directory and discover local businesses, services, and organizations in Lima, Peru.">
+    <meta name="author" content="Yeikob Valverde">
+
+    <title>Business Directory | Lima Business Alliance</title>
+
+    <meta property="og:title" content="Lima Business Alliance | Business Directory">
+    <meta property="og:description" content="Discover businesses and organizations in Lima, Peru. Connect with local companies and explore new business opportunities.">
+    <meta property="og:image" content="https://YOUR-USERNAME.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">L</span>
+                <span class="brand-name">Lima Business Alliance</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html" class="active" aria-current="page">Directory</a>
+        <a href="join.html">Join Us</a>
+    </nav>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <p class="directory-intro">Discover local businesses and organizations that contribute to Lima's economic growth.</p>
+
+        <div class="view-options">
+            <button type="button" id="grid-view" class="view-button active" aria-pressed="true">Grid View</button>
+            <button type="button" id="list-view" class="view-button" aria-pressed="false">List View</button>
+        </div>
+
+        <div id="members-container" class="members-grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Lima Business Alliance</h2>
+                <p>Lima, Peru</p>
+                <p>contact@limabusinessalliance.org</p>
+                <p>+51 1 555 0100</p>
+            </div>
+
+            <div class="development-info">
+                <p>Developed by Yeikob Valverde</p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>&copy; <span id="currentyear"></span> Lima Business Alliance</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

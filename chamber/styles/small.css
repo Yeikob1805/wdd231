@@ -1,0 +1,295 @@
+
+:root {
+    --primary-color: #17324D;
+    --secondary-color: #1B998B;
+    --accent-color: #F2C14E;
+    --background-color: #F5F7FA;
+    --card-color: #FFFFFF;
+    --text-color: #263238;
+    --muted-color: #64748B;
+    --border-color: #DCE3EA;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+.brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+    display: block;
+    width: 23px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.hamburger-icon {
+    position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.hamburger-icon::before {
+    top: -7px;
+}
+
+.hamburger-icon::after {
+    top: 7px;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #10283D;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 0.9rem 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+nav a:hover {
+    background-color: #24516C;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.directory-intro {
+    color: var(--muted-color);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-options {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-button {
+    padding: 0.7rem 1.2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--primary-color);
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-button.active,
+.view-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1.3rem;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(23, 50, 77, 0.06);
+}
+
+.member-card img {
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.member-card h2 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.member-card p {
+    font-size: 0.88rem;
+    color: var(--muted-color);
+}
+
+.member-card a {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.member-card a:hover {
+    text-decoration: underline;
+}
+
+.member-level {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    background-color: #FFF5D6;
+    color: #765600;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.members-list .member-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+.members-list .member-card img {
+    display: none;
+}
+
+.members-list .member-card h2 {
+    font-size: 1rem;
+}
+
+.members-list .member-card p {
+    font-size: 0.85rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 0.3rem 0;
+    overflow-wrap: anywhere;
+}
+
+.development-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 350px) {
+    .brand-name {
+        font-size: 0.85rem;
+    }
+
+    .view-button {
+        padding: 0.6rem 0.8rem;
+    }
+}

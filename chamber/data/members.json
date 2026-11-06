@@ -1,0 +1,59 @@
+
+[
+    {
+        "name": "Andes Digital",
+        "address": "Av. Javier Prado 123, San Isidro, Lima",
+        "phone": "+51 999 100 101",
+        "website": "https://andesdigital.example.com",
+        "image": "andes-digital.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Pacific Logistics",
+        "address": "Av. Elmer Faucett 456, Callao, Lima",
+        "phone": "+51 999 100 102",
+        "website": "https://pacificlogistics.example.com",
+        "image": "pacific-logistics.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Lima Green Solutions",
+        "address": "Av. Arequipa 789, Miraflores, Lima",
+        "phone": "+51 999 100 103",
+        "website": "https://limagreensolutions.example.com",
+        "image": "lima-green.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Nexus Consulting",
+        "address": "Calle Los Pinos 234, San Isidro, Lima",
+        "phone": "+51 999 100 104",
+        "website": "https://nexusconsulting.example.com",
+        "image": "nexus-consulting.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Innova Marketing",
+        "address": "Av. Benavides 567, Surco, Lima",
+        "phone": "+51 999 100 105",
+        "website": "https://innovamarketing.example.com",
+        "image": "innova-marketing.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Central Business Group",
+        "address": "Jr. de la Unión 890, Cercado de Lima",
+        "phone": "+51 999 100 106",
+        "website": "https://centralbusiness.example.com",
+        "image": "central-business.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Vertex Technology",
+        "address": "Av. La Marina 321, San Miguel, Lima",
+        "phone": "+51 999 100 107",
+        "website": "https://vertextechnology.example.com",
+        "image": "vertex-technology.png",
+        "membershipLevel": 3
+    }
+]
