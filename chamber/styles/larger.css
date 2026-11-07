@@ -90,10 +90,7 @@
     }
 
     .members-list .member-card img {
-        display: block;
-        width: 90px;
-        height: 70px;
-        flex-shrink: 0;
+    display: none;
     }
 
     .members-list .member-card h2 {
