@@ -136,3 +136,72 @@
         height: 110px;
     }
 }
+
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .hero-content {
+        min-height: 480px;
+        padding: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .events-section h2,
+    .weather-section h2,
+    .spotlights-section h2 {
+        font-size: 1.8rem;
+    }
+
+    #events-container,
+    #spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.3rem;
+    }
+
+    #current-weather {
+        grid-template-columns: 1fr;
+    }
+
+    #weather-forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .event-card,
+    .spotlight-card,
+    .weather-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero-content {
+        min-height: 520px;
+        padding: 4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3.2rem;
+    }
+
+    #events-container,
+    #spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
