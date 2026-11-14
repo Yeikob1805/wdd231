@@ -188,7 +188,7 @@ function displaySpotlights(members) {
 
         card.innerHTML = `
             <h3>${member.name}</h3>
-            <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+            <img src="images/${member.image}" alt="" loading="lazy">
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
