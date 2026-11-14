@@ -199,7 +199,7 @@ h1 {
 }
 
 .member-card a, .spotlight-card a {
-    color: var(--secondary-color);
+    color: #14776D;
     font-weight: 700;
     text-decoration: none;
     overflow-wrap: anywhere;
