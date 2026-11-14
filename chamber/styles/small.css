@@ -34,15 +34,12 @@ header {
 .header-content, .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .header-content, .brand, .footer-content, .weather-current, .spotlight-card {
     display: flex;
     align-items: center;
-}
-
-.header-content, .footer-content {
-    justify-content: space-between;
 }
 
 .brand {
