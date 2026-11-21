@@ -62,3 +62,76 @@
     .hero-content h1 { font-size: 3.2rem; }
     #events-container, #spotlights-container { grid-template-columns: repeat(3, 1fr); }
 }
+
+
+/* Join Page */
+
+@media screen and (min-width: 768px) {
+
+    .join-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .application-section h2,
+    .membership-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .join-form {
+        padding: 2rem;
+        gap: 1.3rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .membership-card {
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .membership-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(23, 50, 77, 0.12);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .join-layout {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 3rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membership-card {
+        min-height: 190px;
+        justify-content: center;
+    }
+}
+
+
+/* Thank You Page */
+
+@media screen and (min-width: 768px) {
+    .thankyou-section {
+        padding: 1.5rem;
+    }
+
+    .application-summary {
+        padding: 2rem;
+    }
+
+    .application-summary dl {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}

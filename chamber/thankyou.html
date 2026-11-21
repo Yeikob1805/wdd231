@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for applying to join Lima Business Alliance. Review your membership application details.">
+    <meta name="author" content="Yeikob Valverde">
+
+    <title>Application Received | Lima Business Alliance</title>
+
+    <meta property="og:title" content="Application Received | Lima Business Alliance">
+    <meta property="og:description" content="Thank you for your interest in Lima Business Alliance.">
+    <meta property="og:image" content="https://yeikob1805.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://yeikob1805.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">L</span>
+                <span class="brand-name">Lima Business Alliance</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join Us</a>
+    </nav>
+
+    <main>
+        <section class="thankyou-section">
+            <h1>Application Received!</h1>
+            <p>Thank you for your interest in Lima Business Alliance. We have received your membership application.</p>
+
+            <div class="application-summary">
+                <h2>Application Summary</h2>
+
+                <dl>
+                    <div>
+                        <dt>First Name</dt>
+                        <dd id="firstName"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Last Name</dt>
+                        <dd id="lastName"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Email Address</dt>
+                        <dd id="email"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Mobile Phone</dt>
+                        <dd id="phone"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Business / Organization</dt>
+                        <dd id="organization"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Application Date</dt>
+                        <dd id="timestamp"></dd>
+                    </div>
+                </dl>
+            </div>
+
+            <a href="index.html" class="return-link">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Lima Business Alliance</h2>
+                <p>Lima, Peru</p>
+                <p>contact@limabusinessalliance.org</p>
+                <p>+51 1 555 0100</p>
+            </div>
+
+            <div class="development-info">
+                <p>Developed by Yeikob Valverde</p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>&copy; <span id="currentyear"></span> Lima Business Alliance</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Lima Business Alliance and connect with businesses, entrepreneurs, and organizations across Lima, Peru.">
+    <meta name="author" content="Yeikob Valverde">
+
+    <title>Join the Chamber | Lima Business Alliance</title>
+
+    <meta property="og:title" content="Join Lima Business Alliance">
+    <meta property="og:description" content="Become a member of Lima Business Alliance and discover new business opportunities.">
+    <meta property="og:image" content="https://yeikob1805.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://yeikob1805.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">L</span>
+                <span class="brand-name">Lima Business Alliance</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active" aria-current="page">Join Us</a>
+    </nav>
+
+    <main>
+        <h1>Join Lima Business Alliance</h1>
+
+        <p class="directory-intro">Become a member and connect with Lima's growing business community.</p>
+
+        <div class="join-layout">
+            <section class="application-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+
+                    <label class="form-field">
+                        First Name
+                        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label class="form-field">
+                        Last Name
+                        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label class="form-field">
+                        Organizational Title
+                        <input type="text" name="organizationTitle" title="Enter your title within your organization. Use at least seven letters, spaces, or hyphens." autocomplete="organization-title" pattern="[A-Za-z -]{7,}" placeholder="Example: Marketing Manager">
+                    </label>
+
+                    <label class="form-field">
+                        Email Address
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <label class="form-field">
+                        Mobile Phone
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label class="form-field">
+                        Business / Organization Name
+                        <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label class="form-field">
+                        Membership Level
+                        <select name="membership" title="Select your membership level" required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label class="form-field">
+                        Business / Organization Description
+                        <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Application" class="submit-button">
+                </form>
+            </section>
+
+            <section class="membership-section">
+                <h2>Membership Options</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>Designed for nonprofit organizations.</p>
+                        <a href="#np-dialog" class="membership-link" data-dialog="np-dialog">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Essential benefits for growing businesses.</p>
+                        <a href="#bronze-dialog" class="membership-link" data-dialog="bronze-dialog">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Greater visibility and exclusive opportunities.</p>
+                        <a href="#silver-dialog" class="membership-link" data-dialog="silver-dialog">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium exposure and networking opportunities.</p>
+                        <a href="#gold-dialog" class="membership-link" data-dialog="gold-dialog">View Benefits</a>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-dialog" class="membership-dialog">
+            <h2>NP Membership Benefits</h2>
+            <p>Designed for nonprofit organizations with no membership fee.</p>
+            <ul>
+                <li>Access to community networking events.</li>
+                <li>Basic business directory listing.</li>
+                <li>Access to selected educational resources.</li>
+            </ul>
+            <button type="button" class="dialog-close">Close</button>
+        </dialog>
+
+        <dialog id="bronze-dialog" class="membership-dialog">
+            <h2>Bronze Membership Benefits</h2>
+            <p>Essential support for small and growing businesses.</p>
+            <ul>
+                <li>All NP membership benefits.</li>
+                <li>Discounts on selected chamber events.</li>
+                <li>Access to business training sessions.</li>
+            </ul>
+            <button type="button" class="dialog-close">Close</button>
+        </dialog>
+
+        <dialog id="silver-dialog" class="membership-dialog">
+            <h2>Silver Membership Benefits</h2>
+            <p>More opportunities to promote your business.</p>
+            <ul>
+                <li>All Bronze membership benefits.</li>
+                <li>Priority access to networking events.</li>
+                <li>Additional advertising opportunities.</li>
+                <li>Eligibility for business spotlights.</li>
+            </ul>
+            <button type="button" class="dialog-close">Close</button>
+        </dialog>
+
+        <dialog id="gold-dialog" class="membership-dialog">
+            <h2>Gold Membership Benefits</h2>
+            <p>Premium benefits for established businesses.</p>
+            <ul>
+                <li>All Silver membership benefits.</li>
+                <li>Premium homepage advertising opportunities.</li>
+                <li>Exclusive business networking events.</li>
+                <li>Priority promotional opportunities.</li>
+            </ul>
+            <button type="button" class="dialog-close">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Lima Business Alliance</h2>
+                <p>Lima, Peru</p>
+                <p>contact@limabusinessalliance.org</p>
+                <p>+51 1 555 0100</p>
+            </div>
+
+            <div class="development-info">
+                <p>Developed by Yeikob Valverde</p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>&copy; <span id="currentyear"></span> Lima Business Alliance</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
