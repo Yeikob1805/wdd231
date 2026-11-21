@@ -93,7 +93,7 @@
 
                     <label class="form-field">
                         Membership Level
-                        <select name="membership" title="Select your membership level" required>
+                        <select name="membership" title="Select your membership level" autocomplete="off" required>
                             <option value="" disabled selected>Select a membership level</option>
                             <option value="np">NP Membership</option>
                             <option value="bronze">Bronze Membership</option>
@@ -104,10 +104,10 @@
 
                     <label class="form-field">
                         Business / Organization Description
-                        <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+                        <textarea name="description" title="Describe your business or organization" autocomplete="off" rows="5"></textarea>
                     </label>
 
-                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="hidden" name="timestamp" id="timestamp" autocomplete="off">
 
                     <input type="submit" value="Submit Application" class="submit-button">
                 </form>
