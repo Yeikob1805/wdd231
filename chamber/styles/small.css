@@ -3,11 +3,13 @@
     --secondary-color: #1B998B;
     --accent-color: #F2C14E;
     --background-color: #F5F7FA;
-    --card-color: #FFFFFF;
+    --card-color: var(--white);
     --text-color: #263238;
     --muted-color: #626F80;
     --border-color: #DCE3EA;
     --white: #FFFFFF;
+    --link-color: #14776D;
+    --input-border: #B8C5D1;
     --nav-background: #10283D;
     --nav-hover: #24516C;
     --soft-blue: #EAF1F5;
@@ -199,7 +201,7 @@ h1 {
 }
 
 .member-card a, .spotlight-card a {
-    color: #14776D;
+    color: var(--link-color);
     font-weight: 700;
     text-decoration: none;
     overflow-wrap: anywhere;
@@ -412,13 +414,6 @@ footer p {
     .view-button { padding: 0.6rem 0.8rem; }
 }
 
-#spotlights-container .spotlight-card a {
-    color: #14776D;
-}
-
-.members-grid .member-card a {
-    color: #14776D;
-}
 
 
 /* Join Page */
@@ -462,9 +457,9 @@ footer p {
 .form-field textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid #B8C5D1;
+    border: 1px solid var(--input-border);
     border-radius: 5px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     color: var(--text-color);
     font-family: inherit;
     font-size: 0.9rem;
@@ -486,7 +481,7 @@ footer p {
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--white);
     font-family: inherit;
     font-size: 0.95rem;
     font-weight: 700;
@@ -494,7 +489,7 @@ footer p {
 }
 
 .submit-button:hover {
-    background-color: #24516C;
+    background-color: var(--nav-hover);
     transform: translateY(-2px);
 }
 
@@ -542,7 +537,7 @@ footer p {
 }
 
 .membership-link {
-    color: #14776D;
+    color: var(--link-color);
     font-size: 0.9rem;
     font-weight: 700;
     text-decoration: underline;
@@ -568,7 +563,7 @@ footer p {
     padding: 2rem;
     border: 1px solid var(--border-color);
     border-radius: 10px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     color: var(--text-color);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -601,13 +596,13 @@ footer p {
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--white);
     font-family: inherit;
     font-weight: 600;
 }
 
 .dialog-close:hover {
-    background-color: #24516C;
+    background-color: var(--nav-hover);
 }
 
 @keyframes membership-entry {
@@ -694,7 +689,7 @@ footer p {
     margin-top: 1.5rem;
     padding: 0.8rem 1.2rem;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--white);
     border-radius: 5px;
     font-weight: 600;
     text-decoration: none;
@@ -702,7 +697,7 @@ footer p {
 }
 
 .return-link:hover {
-    background-color: #24516C;
+    background-color: var(--nav-hover);
 }
 
 .return-link:focus-visible {
