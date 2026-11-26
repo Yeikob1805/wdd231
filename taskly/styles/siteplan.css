@@ -1,0 +1,136 @@
+
+:root {
+    --primary: #1F1032;
+    --secondary: #F3F4F6;
+    --accent: #10B981;
+    --text: #222222;
+    --white: #FFFFFF;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.3rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+
+h2 {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+}
+
+p, li {
+    margin-bottom: 0.7rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.color-card, .font-example {
+    background-color: var(--secondary);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+}
+
+.color-card {
+    border-left: 5px solid var(--primary);
+}
+
+.color-card.secondary {
+    border-left-color: #999999;
+}
+
+.color-card.accent {
+    border-left-color: var(--accent);
+}
+
+.color-card.text-color {
+    border-left-color: var(--text);
+}
+
+.montserrat-sample {
+    font-family: var(--heading-font);
+}
+
+.roboto-sample {
+    font-family: var(--body-font);
+}
+
+.wireframe-section {
+    margin-top: 1.5rem;
+}
+
+.wireframe-image {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+.wireframe-image img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 0 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
