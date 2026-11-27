@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover interesting places, attractions, and important locations in Lima, Peru.">
+    <meta name="author" content="Yeikob Valverde">
+    <title>Discover | Lima Business Alliance</title>
+    <meta property="og:title" content="Lima Business Alliance | Discover">
+    <meta property="og:description" content="Explore interesting places and attractions in Lima, Peru.">
+    <meta property="og:image" content="https://yeikob1805.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://yeikob1805.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">L</span>
+                <span class="brand-name">Lima Business Alliance</span>
+            </a>
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+        </div>
+    </header>
+    <nav id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html" class="active" aria-current="page">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join Us</a>
+    </nav>
+    <main>
+        <section class="discover-intro">
+            <h1>Discover Lima</h1>
+            <p>Explore some of the most interesting places in Lima, from historic sites to parks and cultural attractions.</p>
+        </section>
+        <section class="visit-message">
+            <p id="visit-message">Welcome! Let us know if you have any questions.</p>
+        </section>
+        <section class="discover-container" id="discover-container" aria-label="Places of interest in Lima">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Lima Business Alliance</h2>
+                <p>Lima, Peru</p>
+                <p>contact@limabusinessalliance.org</p>
+                <p>+51 1 555 0100</p>
+            </div>
+            <div class="development-info">
+                <p>Developed by Yeikob Valverde</p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>&copy; <span id="currentyear"></span> Lima Business Alliance</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

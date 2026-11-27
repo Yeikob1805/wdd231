@@ -704,3 +704,158 @@ footer p {
     outline: 3px solid var(--accent-color);
     outline-offset: 3px;
 }
+
+
+.discover-intro {
+    margin-bottom: 1.5rem;
+}
+
+.discover-intro p {
+    color: var(--muted-color);
+    font-size: 0.95rem;
+}
+
+.visit-message {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: var(--soft-blue);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.visit-message p {
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "place1"
+        "place2"
+        "place3"
+        "place4"
+        "place5"
+        "place6"
+        "place7"
+        "place8";
+    gap: 1.2rem;
+}
+
+.place-1 { grid-area: place1; }
+.place-2 { grid-area: place2; }
+.place-3 { grid-area: place3; }
+.place-4 { grid-area: place4; }
+.place-5 { grid-area: place5; }
+.place-6 { grid-area: place6; }
+.place-7 { grid-area: place7; }
+.place-8 { grid-area: place8; }
+
+.discover-card {
+    min-width: 0;
+    padding: 1rem;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+.discover-card h2 {
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+    font-size: 1.15rem;
+}
+
+.discover-card figure {
+    margin: 0 0 1rem;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.discover-card address {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: var(--muted-color);
+    font-size: 0.85rem;
+    font-style: normal;
+}
+
+.discover-card p {
+    margin-bottom: 1rem;
+    color: var(--muted-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.discover-card button {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    min-width: 130px;
+    margin: 1rem auto 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.discover-card button:hover {
+    background-color: var(--nav-hover);
+}
+
+.place-dialog {
+    width: min(90%, 500px);
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+.place-dialog::backdrop {
+    background-color: rgba(16, 40, 61, 0.7);
+}
+
+.place-dialog h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.place-dialog address {
+    margin-bottom: 1rem;
+    color: var(--muted-color);
+    font-style: normal;
+}
+
+.place-dialog p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.place-dialog button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.place-dialog button:hover {
+    background-color: var(--nav-hover);
+}

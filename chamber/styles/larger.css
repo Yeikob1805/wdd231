@@ -135,3 +135,47 @@
         column-gap: 2rem;
     }
 }
+
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "place1 place1"
+            "place2 place3"
+            "place4 place4"
+            "place5 place6"
+            "place7 place7"
+            "place8 place8";
+        gap: 1.3rem;
+    }
+
+    .discover-card {
+        padding: 1.2rem;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .discover-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "place1 place1 place2 place2"
+            "place3 place4 place4 place5"
+            "place6 place6 place7 place8";
+        gap: 1.5rem;
+    }
+
+    .discover-card {
+        padding: 1.3rem;
+    }
+
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.04);
+        filter: brightness(0.85);
+    }
+}
